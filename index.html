@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Florian Giesser</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div onanimationend="hideWholeScreen()" class="animation">
+        <svg id="flogie" width="400" height="500" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M140 40C84.7715 40 40 84.7715 40 140L40 440C40 451.046 48.9543 460 60 460H80C91.0457 460 100 451.046 100 440V180C100 135.817 135.817 100 180 100H340C351.046 100 360 91.0457 360 80V60C360 48.9543 351.046 40 340 40H140ZM140 460C140 482.091 122.091 500 100 500H40C17.9086 500 0 482.091 0 460V140C0 62.6801 62.6801 0 140 0H360C382.092 0 400 17.9086 400 40V100C400 122.091 382.092 140 360 140H180C157.909 140 140 157.909 140 180V460ZM180 239.76C163.568 252.57 153 272.551 153 295C153 317.449 163.568 337.43 180 350.24C191.866 359.49 206.789 365 223 365C261.66 365 293 333.66 293 295C293 256.34 261.66 225 223 225C206.789 225 191.866 230.51 180 239.76ZM223 325C239.569 325 253 311.569 253 295C253 278.431 239.569 265 223 265C206.431 265 193 278.431 193 295C193 311.569 206.431 325 223 325Z"
+                fill="white" />
+        </svg>
+    </div>
+
+    <nav>
+        <div class="nav-menu-small">
+            <div class="logo">
+                <svg width="400" height="500" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M140 40C84.7715 40 40 84.7715 40 140L40 440C40 451.046 48.9543 460 60 460H80C91.0457 460 100 451.046 100 440V180C100 135.817 135.817 100 180 100H340C351.046 100 360 91.0457 360 80V60C360 48.9543 351.046 40 340 40H140ZM140 460C140 482.091 122.091 500 100 500H40C17.9086 500 0 482.091 0 460V140C0 62.6801 62.6801 0 140 0H360C382.092 0 400 17.9086 400 40V100C400 122.091 382.092 140 360 140H180C157.909 140 140 157.909 140 180V460ZM180 239.76C163.568 252.57 153 272.551 153 295C153 317.449 163.568 337.43 180 350.24C191.866 359.49 206.789 365 223 365C261.66 365 293 333.66 293 295C293 256.34 261.66 225 223 225C206.789 225 191.866 230.51 180 239.76ZM223 325C239.569 325 253 311.569 253 295C253 278.431 239.569 265 223 265C206.431 265 193 278.431 193 295C193 311.569 206.431 325 223 325Z"
+                        fill="white" />
+                </svg>
+
+            </div>
+            <div class="menu">
+                <input type="checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" class="menu-toggle">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </label>
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="navbar">
+                <li class="nav-item">
+                    <a onclick="scrollToSection('home');" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a>Über mich</a>
+                    <ul class="dropdown">
+                        <li><a onclick="scrollToSection('about');" href="#about">Über mich</a></li>
+                        <li><a onclick="scrollToSection('references');" href="#references">Referenzen</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a>Kontakt</a> <!--onclick="scrollToSection('contakt');"-->
+                    <ul class="dropdown">
+                        <li><a onclick="scrollToSection('contakt');" href="#contact">Kontakt</a></li>
+                        <li><a onclick="scrollToSection('prices');" href="#prices">Preise</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="maincontent">
+        <section id="home" class="particle">
+            <div class="p-container">
+                <h1 class="p-title">Website</h1>
+                <div class="p-description">
+                    <span></span>
+                    <div>Your own personalized <br> Website </div>
+                </div>
+
+                <h3 class="p-h3">
+                    Your
+                    <div class="circleone"></div>
+                    <div class="circletwo"></div>
+                </h3>
+                <div class="simple">
+                    Simple
+                </div>
+                <div class="qual">
+                    Quality
+                    <div class="ca"></div>
+                    <div class="cb"></div>
+                    <div class="cc"></div>
+                    <div class="cd"></div>
+                </div>
+                <div class="quick">
+                    Quick
+                </div>
+                <div class="lock">
+                    <div class="lock_border">
+                        <svg width="40" height="40" viewBox="0 0 79 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M69 47H10C8.89543 47 8 47.8954 8 49V92C8 93.1046 8.89543 94 10 94H69C70.1046 94 71 93.1046 71 92V49C71 47.8954 70.1046 47 69 47ZM10 39C4.47715 39 0 43.4772 0 49V92C0 97.5228 4.47715 102 10 102H69C74.5229 102 79 97.5228 79 92V49C79 43.4772 74.5229 39 69 39H10Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M57 39V25C57 15.6112 49.3888 8 40 8C30.6112 8 23 15.6112 23 25V39H57ZM40 0C26.1929 0 15 11.1929 15 25V47H65V25C65 11.1929 53.8071 0 40 0Z"
+                                fill="white" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="sett">
+                    <svg width="40" height="40" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M14.279 2.152C13.909 2 13.439 2 12.5 2s-1.409 0-1.779.152a2.008 2.008 0 0 0-1.09 1.083c-.094.223-.13.484-.145.863a1.615 1.615 0 0 1-.796 1.353a1.64 1.64 0 0 1-1.579.008c-.338-.178-.583-.276-.825-.308a2.026 2.026 0 0 0-1.49.396c-.318.242-.553.646-1.022 1.453c-.47.807-.704 1.21-.757 1.605c-.07.526.074 1.058.4 1.479c.148.192.357.353.68.555c.477.297.783.803.783 1.361c0 .558-.306 1.064-.782 1.36c-.324.203-.533.364-.682.556a1.99 1.99 0 0 0-.399 1.479c.053.394.287.798.757 1.605c.47.807.704 1.21 1.022 1.453c.424.323.96.465 1.49.396c.242-.032.487-.13.825-.308a1.64 1.64 0 0 1 1.58.008c.486.28.774.795.795 1.353c.015.38.051.64.145.863c.204.49.596.88 1.09 1.083c.37.152.84.152 1.779.152s1.409 0 1.779-.152a2.008 2.008 0 0 0 1.09-1.083c.094-.223.13-.483.145-.863c.02-.558.309-1.074.796-1.353a1.64 1.64 0 0 1 1.579-.008c.338.178.583.276.825.308c.53.07 1.066-.073 1.49-.396c.318-.242.553-.646 1.022-1.453c.47-.807.704-1.21.757-1.605a1.99 1.99 0 0 0-.4-1.479c-.148-.192-.357-.353-.68-.555c-.477-.297-.783-.803-.783-1.361c0-.558.306-1.064.782-1.36c.324-.203.533-.364.682-.556a1.99 1.99 0 0 0 .399-1.479c-.053-.394-.287-.798-.757-1.605c-.47-.807-.704-1.21-1.022-1.453a2.026 2.026 0 0 0-1.49-.396c-.242.032-.487.13-.825.308a1.64 1.64 0 0 1-1.58-.008a1.615 1.615 0 0 1-.795-1.353c-.015-.38-.051-.64-.145-.863a2.007 2.007 0 0 0-1.09-1.083ZM12.5 15c1.67 0 3.023-1.343 3.023-3S14.169 9 12.5 9c-1.67 0-3.023 1.343-3.023 3s1.354 3 3.023 3Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <div class="sa"></div>
+                    <div class="sb"></div>
+                </div>
+                <div class="map">
+                    <svg width="60" height="60" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M6.5 20q-2.275 0-3.888-1.575T1 14.575q0-1.95 1.175-3.475T5.25 9.15q.625-2.3 2.5-3.725T12 4q2.925 0 4.963 2.038T19 11q1.725.2 2.863 1.488T23 15.5q0 1.875-1.313 3.188T18.5 20h-12Zm0-2h12q1.05 0 1.775-.725T21 15.5q0-1.05-.725-1.775T18.5 13H17v-2q0-2.075-1.463-3.538T12 6Q9.925 6 8.462 7.463T7 11h-.5q-1.45 0-2.475 1.025T3 14.5q0 1.45 1.025 2.475T6.5 18Zm5.5-6Z" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="blurry-point" style="top: -40%; left: -300px;"></div>
+            <div class="blurry-point" style="top: 80%; right: -100px;"></div>
+            <div class="section-container">
+                <div class="about-description">
+                    <h2>Über mich</h2>
+                    <p>Ich bin Florian Giesser, Student an der Kantonsschule in Sargans. Ich entschied mich in meiner
+                        Freizeit Webseiten zu programmieren.</p>
+                </div>
+                <div class="about-kompetenzen">
+                    <h2>Kompetenzen</h2>
+                    <p><span></span><span>3 Jahre Erfahrung</span> <br><span>HTML, CSS, Javascript</span>
+                        <br><span>Design</span> <br> <span>Webhosting</span>
+                    </p>
+                </div>
+                <div class="svg"><svg width="400" height="500" viewBox="0 0 400 500" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M140 40C84.7715 40 40 84.7715 40 140L40 440C40 451.046 48.9543 460 60 460H80C91.0457 460 100 451.046 100 440V180C100 135.817 135.817 100 180 100H340C351.046 100 360 91.0457 360 80V60C360 48.9543 351.046 40 340 40H140ZM140 460C140 482.091 122.091 500 100 500H40C17.9086 500 0 482.091 0 460V140C0 62.6801 62.6801 0 140 0H360C382.092 0 400 17.9086 400 40V100C400 122.091 382.092 140 360 140H180C157.909 140 140 157.909 140 180V460ZM180 239.76C163.568 252.57 153 272.551 153 295C153 317.449 163.568 337.43 180 350.24C191.866 359.49 206.789 365 223 365C261.66 365 293 333.66 293 295C293 256.34 261.66 225 223 225C206.789 225 191.866 230.51 180 239.76ZM223 325C239.569 325 253 311.569 253 295C253 278.431 239.569 265 223 265C206.431 265 193 278.431 193 295C193 311.569 206.431 325 223 325Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section id="references" class="section">
+            <div class="blurry-point" style="top: 60%; left: -300px;"></div>
+            <div class="blurry-point" style="top: -20%; right: -100px;">
+            </div>
+            <div class="section-container">
+                <h1>Referenzen</h1>
+                <div class="description">
+                    <h2>Referenzen</h2>
+                    <p>Hier sind alle unsere bisher gefertigten Webseiten.</p>
+                    <iframe src="https://giessercode.github.io" frameborder="0"></iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="prices" class="section">
+            <div class="blurry-point" style="top: -40%; left: -300px;"></div>
+            <div class="blurry-point" style="top: 70%; right: -100px;"></div>
+            <div class="pricing">
+                <div class="title">
+                    <h2>Preise</h2>
+                    <p>Die Preise können erheblich variieren, abhängig von dem investierten Aufwand.</p>
+                </div>
+                <div class="flex-container">
+                    <div class="flex">
+                        <h2>Simple</h2>
+                        <p><span></span><span>Bis zu 3 Seiten</span> <br> <span>Simples Design</span> <br>
+                            <span>Optimiert</span> <br><span>Personalisiert</span> <br> <span>Eigene Domain</span> <br>
+                            <span>Gute Performance</span>
+                        </p>
+                        <button>CHF 1200.-</button>
+                    </div>
+                    <div class="flex">
+                        <h2>Advanced</h2>
+                        <p><span></span><span>Bis zu 8 Seiten</span> <br><span>Animationen</span>
+                            <br><span>Statistiken</span> <br> <span>Datenschutz</span> <br><span>Page Rank</span>
+                            <br><span>Starke Performance</span>
+                        </p>
+                        <button>Gemäss Aufwand</button>
+                    </div>
+                    <div class="flex">
+                        <h2>Pro</h2>
+                        <p><span></span><span>Ab 8 Seiten</span> <br><span>Komplexes
+                                Design</span>
+                            <br><span>Backend</span> <br><span>Login</span> <br><span>3D Modelle</span>
+                            <br><span>Scrollanimation</span>
+                        </p>
+                        <button>Gemäss Aufwand</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contakt" class="section">
+            <div class="blurry-point" style="top: 60%; left: -300px;"></div>
+            <div class="blurry-point" style="top: -30%; right: -100px;">
+            </div>
+            <div class="section-container">
+                <h1>Kontakt</h1>
+                <div class="description">
+                    <h2>Interessiert?</h2>
+                    <p>Brauchen Sie noch mehr Informationen oder möchten sie direkt einen Termin abmachen? Kontaktieren
+                        Sie uns.</p>
+                    <form action="./process_form.php" method="post">
+                        <input type="email" placeholder="Ihre E-Mail Adresse" required>
+                        <input type="text" placeholder="Anrede">
+                        <textarea name="mail" id="mail-content" cols="30" rows="10"
+                            placeholder="Ich möchte mehr erfahren." required></textarea>
+                        <input type="submit" value="Senden">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+
+<!--<script>
+    const flogie = document.querySelectorAll('#flogie path');
+    for (let i = 0; i < 8; i++) {
+        console.log(i)
+        console.log(flogie[i].getTotalLength());
+    }
+</script>-->
