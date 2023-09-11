@@ -101,20 +101,19 @@ body {
 .maincontent {
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     background-color: var(--first-background);
     color: var(--white-textcolor);
-    overflow: scroll;
+    /*overflow: scroll;
     -ms-scroll-snap-type: y mandatory;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;*/
     -webkit-transition: -webkit-filter 200ms ease;
     transition: -webkit-filter 200ms ease;
-    -o-transition: filter 200ms ease;
-    transition: filter 200ms ease;
+    -o-transition: filter 200ms ease, -webkit-filter 200ms ease;
     transition: filter 200ms ease, -webkit-filter 200ms ease;
     overflow-x: hidden;
 }
