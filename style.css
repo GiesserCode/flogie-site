@@ -1067,20 +1067,6 @@ form {
     padding-left: 20px;
 }
 
-/*.blurry-point {
-    pointer-events: none;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    scale: 6;
-    border-radius: 50%;
-    -webkit-filter: blur(100px);
-    filter: blur(100px);
-    overflow-x: hidden;
-    z-index: -1;
-    background-color: var(--blue-blur-color);
-}*/
-
 .title {
     text-align: center;
     margin-top: 50px;
@@ -1126,6 +1112,20 @@ form {
 
     .nav-item:hover+.p-title {
         color: blue;
+    }
+
+    .blurry-point {
+        pointer-events: none;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        scale: 6;
+        border-radius: 50%;
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+        overflow-x: hidden;
+        z-index: -1;
+        background-color: var(--blue-blur-color);
     }
 }
 
