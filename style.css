@@ -835,16 +835,15 @@ label {
     padding-left: 20px;
 }
 
-.flex button {
+.flex  button {
     margin: 20px;
     outline: none;
     border: none;
-    background-color: grey;
     padding: 14px;
     font-size: var(--font-size-button);
     font-weight: bold;
     border-radius: var(--border);
-    color: var(--first-main);
+    color: var(--white-textcolor);
     -webkit-box-shadow: var(--shadow);
     box-shadow: var(--shadow);
     -webkit-transition: -webkit-box-shadow 200ms ease;
